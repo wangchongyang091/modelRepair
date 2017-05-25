@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" chars>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>模型类别修复工具</title>
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: monospace;
+        /*background-color: #e5f3e5;*/
+    }
+    
+    fieldset {
+        margin: 100px auto;
+        width: 600px;
+        height: 280px;
+        background-color: whitesmoke;
+    }
+    
+    form {
+        margin-top: 75px;
+    }
+    
+    input:hover {
+        opacity: 0.9
+    }
+    
+    input {
+        border: solid 1px #626b69;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    
+    select {
+        border: solid 1px #626b69;
+        /*很关键：将默认的select选择框样式清除*/
+        /*appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;*/
+    }
+    
+    select:hover {
+        opacity: 0.9
+    }
+    
+    .line {
+        width: 500px;
+        margin-top: 5px;
+        margin-left: 28px;
+        font-size: 20px;
+    }
+    
+    .label_name {
+        width: 25%;
+        display: inline-block;
+    }
+    
+    .middle {
+        /*width: 10%;*/
+        text-align: center;
+    }
+    
+    .right {
+        width: 50%;
+        margin-left: 5px;
+        font-size: 19px;
+    }
+    
+    .main-shadow {
+        width: 450px;
+        height: 550px;
+        border: 2px solid #dadada;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        margin-top: -275px;
+        margin-left: -225px;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px #333;
+    }
+    
+    .title {
+        width: 95%;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 12px;
+        padding-bottom: 15px;
+        font-family: monospace;
+        font-size: 30px;
+        border-bottom: 1px solid #aaa;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-shadow">
+        <div class="title">设备信息</div>
+        <!-- <fieldset> -->
+        <!-- <legend>厂商型号信息</legend> -->
+        <form id="deviceInfo" name="deviceInfo">
+            <div class="line">
+                <div class="label_name">设备Sysoid</div><span class="middle">:</span>
+                <input type="text" id="sysoid" name="sysoid" class="right">
+            </div>
+            <div class="line">
+                <div class="label_name">设备型号</div><span class="middle">:</span>
+                <input type="text" id="modelNumber" name="modelNumber" class="right">
+            </div>
+            <div class="line">
+                <div class="label_name">设备系列号</div><span class="middle">:</span>
+                <input type="text" id="series" name="series" class="right">
+            </div>
+            <div class="line">
+                <div class="label_name">设备厂商</div><span class="middle">:</span>
+                <select id="vendor" name="vendor" class="right" onchange="ModelRepair.changeModelOption(this.value)">
+                </select>
+            </div>
+            <div class="line">
+                <div class="label_name">对应模型</div><span>:</span>
+                <select id="model" name="model" class="right">
+                    <option value="RIIL_RMM_SWITCH_CABLETRON_SNMP">凯创交换机(SNMP)</option>
+                    <option value="RIIL_RMM_SWITCH_JUNIPER_SNMP">Juniper交换机(SNMP)</option>
+                </select>
+            </div>
+            <div class="line">
+                <div class="label_name">设备类型</div><span>:</span>
+                <select id="devType" name="devType" class="right">
+                    <option value="Host">主机</option>
+                    <option value="Router">路由器</option>
+                    <option value="Switch">二层交换机</option>
+                    <option value="RouterSwitch">三层交换机</option>
+                    <option value="Firewall">防火墙</option>
+                    <option value="LoadBalance">负载均衡</option>
+                    <option value="WirelessAP">无线AP设备</option>
+                    <option value="WirelessAC">无线AC设备</option>
+                    <option value="Storage">存储设备</option>
+                    <option value="FCSwitch">FC交换机</option>
+                </select>
+            </div>
+            <div href="javascript:void(0)" onclick="ModelRepair.generateModelFile()" style="text-align:center;font-size:20px;margin-top: 70px;margin-left: 38px;padding-top:8px;width: 380px;height: 30px;border-radius: 6px;background: linear-gradient(#9cb2e0,#265fe8) ">提 交</div>
+        </form>
+        <!-- </fieldset> -->
+    </div>
+    <script type="text/javascript" src="file_saver.js"></script>
+    <script type="text/javascript" src="./vendorModel/vendor_model.js"></script>
+    <script type="text/javascript" src="model_repair.js"></script>
+</body>
+
+</html>

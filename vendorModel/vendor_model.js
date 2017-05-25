@@ -1,0 +1,1504 @@
+var VendorModel = [{
+    "id": "Microsoft",
+    "name": "微软",
+    "icon": "microsoft.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_WINDOWS_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_WINDOWS",
+        "name": "Windows主机(SNMP)"
+    }]
+}, {
+    "id": "Ruijie",
+    "name": "锐捷",
+    "icon": "ruijie.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_RUIJIE",
+        "name": "锐捷防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_IDP_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_IDP_RUIJIE",
+        "name": "锐捷入侵检测防御(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ISHAREAC_RUIJIE_SNMP_TRAP",
+        "resTypeId": "RIIL_RMT_MICROAP_RUIJIE",
+        "name": "锐捷智分主机"
+    }, {
+        "id": "RIIL_RMM_MICROAP_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_MICROAP_RUIJIE",
+        "name": "锐捷智分主机"
+    }, {
+        "id": "RIIL_RMM_NETWORK_RUIJIE_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_RUIJIE_OTHER",
+        "name": "锐捷其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_RUIJIE",
+        "name": "锐捷路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_RUIJIE",
+        "name": "锐捷交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_UAC_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_UAC_RUIJIE",
+        "name": "锐捷上网行为管理与审计(SNMP)"
+    }, {
+        "id": "RIIL_RMM_VSU_SWITCH_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_VSU_SWITCH_RUIJIE",
+        "name": "VSU成员交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_RUIJIE",
+        "name": "锐捷无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_RUIJIE_SNMP_TRAP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_RUIJIE",
+        "name": "锐捷无线AC设备(Trap)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_RUIJIE_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_RUIJIE",
+        "name": "锐捷无线AP设备(SNMP)"
+    }]
+}, {
+    "id": "Cisco",
+    "name": "思科",
+    "icon": "cisco.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_CISCO",
+        "name": "Cisco防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_CISCO_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_CISCO_OTHER",
+        "name": "Cisco其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_CISCO",
+        "name": "Cisco路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_CISCO",
+        "name": "Cisco交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_CISCO",
+        "name": "思科无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_CISCO",
+        "name": "思科无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_CISCO_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_CISCO",
+        "name": "思科WLAN"
+    }]
+}, {
+    "id": "Huawei",
+    "name": "华为",
+    "icon": "huawei.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_HUAWEI_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_HUAWEI",
+        "name": "华为防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_HUAWEI_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_HUAWEI_OTHER",
+        "name": "华为其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_HUAWEI_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_HUAWEI",
+        "name": "华为路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_HUAWEI_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_HUAWEI",
+        "name": "华为交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_HUAWEI_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_HUAWEI",
+        "name": "华为无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_HUAWEI_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_HUAWEI",
+        "name": "华为无线AP设备(SNMP)"
+    }]
+}, {
+    "id": "HP",
+    "name": "惠普",
+    "icon": "hp.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_HPUX_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_HPUX",
+        "name": "HPUX主机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_HP_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_HP_OTHER",
+        "name": "HP其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_HP_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_HP",
+        "name": "HP路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_STORAGE_HP_SNMP",
+        "resTypeId": "RIIL_RMT_STORAGE_HP",
+        "name": "HP存储设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_HP_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_HP",
+        "name": "HP交换机(SNMP)"
+    }]
+}, {
+    "id": "H3C",
+    "name": "华三",
+    "icon": "h3c.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_H3C",
+        "name": "华三防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_IRF_SWITCH_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_IRF_SWITCH_H3C",
+        "name": "IRF成员交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_H3C_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_H3C_OTHER",
+        "name": "华三其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_H3C",
+        "name": "华三路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_H3C",
+        "name": "华三交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_H3C",
+        "name": "华三无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_H3C",
+        "name": "华三无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_H3C_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_H3C",
+        "name": "华三WLAN"
+    }]
+}, {
+    "id": "F5",
+    "name": "F5",
+    "icon": "f5.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_F5_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_F5",
+        "name": "F5负载均衡器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_F5_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_F5_OTHER",
+        "name": "F5其他设备(SNMP)"
+    }]
+}, {
+    "id": "F10",
+    "name": "Force10",
+    "icon": "force10.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_FORCE10_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_FORCE10_OTHER",
+        "name": "F10其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_FORCE10_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_FORCE10",
+        "name": "Force10路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_FORCE10_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_FORCE10",
+        "name": "Force10交换机(SNMP)"
+    }]
+}, {
+    "id": "ZTE",
+    "name": "中兴",
+    "icon": "zte.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_ZTE_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_ZTE_OTHER",
+        "name": "中兴其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_ZTE_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_ZTE",
+        "name": "中兴路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_ZTE_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_ZTE",
+        "name": "中兴交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_ZTE_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_ZTE",
+        "name": "中兴无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_ZTE_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_ZTE",
+        "name": "中兴无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_ZTE_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_ZTE",
+        "name": "中兴WLAN"
+    }]
+}, {
+    "id": "Sva",
+    "name": "上广电",
+    "icon": "sva.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_SHGD_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_SHGD_OTHER",
+        "name": "上广电其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_SHGD_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_SHGD",
+        "name": "上广电路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_SHGD_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_SHGD",
+        "name": "上广电交换机(SNMP)"
+    }]
+}, {
+    "id": "Juniper",
+    "name": "Juniper",
+    "icon": "juniper.png",
+    "models": [{
+        "id": "RIIL_RMM_BSRROUTER_JUNIPER_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_JUNIPER",
+        "name": "Juniper BASE路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_FIREWALL_JUNIPER_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_JUNIPER",
+        "name": "Juniper防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_JUNIPER_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_JUNIPER_OTHER",
+        "name": "Juniper其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_JUNIPER_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_JUNIPER",
+        "name": "Juniper路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_JUNIPER_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_JUNIPER",
+        "name": "Juniper交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_JUNIPER_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_JUNIPER",
+        "name": "juniper无线AC设备"
+    }]
+}, {
+    "id": "3Com",
+    "name": "3Com",
+    "icon": "3com.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_3COM_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_3COM_OTHER",
+        "name": "3Com其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_3COM_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_3COM",
+        "name": "3Com路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_3COM_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_3COM",
+        "name": "3Com交换机(SNMP)"
+    }]
+}, {
+    "id": "BDCom",
+    "name": "博达",
+    "icon": "boda.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_BDCOM_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_BDCOM_OTHER",
+        "name": "博达其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_BDCOM_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_BDCOM",
+        "name": "博达路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_BDCOM_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_BDCOM",
+        "name": "博达交换机(SNMP)"
+    }]
+}, {
+    "id": "Fortinet",
+    "name": "飞塔",
+    "icon": "fortinet.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_FORTINET_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_FORTINET",
+        "name": "飞塔防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_FORTINET_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_FORTINET_OTHER",
+        "name": "飞塔其他设备(SNMP)"
+    }]
+}, {
+    "id": "Founder",
+    "name": "方正",
+    "icon": "founder.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_FOUNDER_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_FOUNDER",
+        "name": "方正防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_FOUNDER_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_FOUNDER_OTHER",
+        "name": "方正其他设备(SNMP)"
+    }]
+}, {
+    "id": "Nokia",
+    "name": "诺基亚",
+    "icon": "nokia.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_NOKIA_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_NOKIA",
+        "name": "Nokia防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_NOKIA_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_NOKIA_OTHER",
+        "name": "Nokia其他设备(SNMP)"
+    }]
+}, {
+    "id": "SecWorld",
+    "name": "网御神州",
+    "icon": "secworld.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_SECWORLD_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_SECWORLD",
+        "name": "SecWorld防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_SECWORLD_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_SECWORLD_OTHER",
+        "name": "网御神州其他设备(SNMP)"
+    }]
+}, {
+    "id": "Sinfors",
+    "name": "深信服",
+    "icon": "sinfors.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_SINFORS_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_SINFORS",
+        "name": "深信服防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_LOADBALANCE_SINFORS_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_SINFORS",
+        "name": "深信服负载均衡器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_SINFORS_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_SINFORS_OTHER",
+        "name": "深信服其他设备(SNMP)"
+    }]
+}, {
+    "id": "Topsec",
+    "name": "天融信",
+    "icon": "topsec.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_TOPSEC_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_TOPSEC",
+        "name": "天融信防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_IPS_TOPSEC_SNMP",
+        "resTypeId": "RIIL_RMT_IPS_TOPSEC",
+        "name": "天融信入侵防御(SNMP)"
+    }, {
+        "id": "RIIL_RMM_LOADBALANCE_TOPSEC_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_TOPSEC",
+        "name": "天融信负载均衡(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_TOPSEC_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_TOPSEC_OTHER",
+        "name": "天融信其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_VPN_TOPSEC_SNMP",
+        "resTypeId": "RIIL_RMT_VPN_TOPSEC",
+        "name": "天融信VPN网关(SNMP)"
+    }]
+}, {
+    "id": "WatchGuard",
+    "name": "WatchGuard",
+    "icon": "watchguard.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_WATCHGUARD_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_WATCHGUARD",
+        "name": "WatchGuard防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_WATCHGUARD_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_WATCHGUARD_OTHER",
+        "name": "WatchGuard其他设备(SNMP)"
+    }]
+}, {
+    "id": "VictoryIdea",
+    "name": "伟思",
+    "icon": "victoryidea.png",
+    "models": [{
+        "id": "RIIL_RMM_GAP_VICTORYIDEA_SNMP",
+        "resTypeId": "RIIL_RMT_GAP_VICTORYIDEA",
+        "name": "伟思网闸(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_VICTORYIDEA_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_VICTORYIDEA_OTHER",
+        "name": "伟思其他设备(SNMP)"
+    }]
+}, {
+    "id": "Radware",
+    "name": "Radware",
+    "icon": "radware.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_RADWARE_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_RADWARE",
+        "name": "Radware负载均衡器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_RADWARE_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_RADWARE_OTHER",
+        "name": "Radware其他设备(SNMP)"
+    }]
+}, {
+    "id": "EMC",
+    "name": "EMC",
+    "icon": "emc.png",
+    "models": []
+}, {
+    "id": "IBM",
+    "name": "IBM",
+    "icon": "ibm.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_AIX_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_AIX",
+        "name": "AIX主机(SNMP)"
+    }]
+}, {
+    "id": "Tongyou",
+    "name": "同有",
+    "icon": "tongyou.png",
+    "models": [{
+        "id": "RIIL_RMM_STORAGE_PROMISE_SNMP",
+        "resTypeId": "RIIL_RMT_STORAGE_PROMISE",
+        "name": "同有存储设备(SNMP)"
+    }]
+}, {
+    "id": "Qsan",
+    "name": "清华同方",
+    "icon": "qsan.png",
+    "models": [{
+        "id": "RIIL_RMM_STORAGE_QSAN_SNMP",
+        "resTypeId": "RIIL_RMT_STORAGE_QSAN",
+        "name": "清华同方存储设备(SNMP)"
+    }]
+}, {
+    "id": "Alcatel",
+    "name": "阿尔卡特",
+    "icon": "alcatel.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_ALCATEL_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_ALCATEL_OTHER",
+        "name": "阿尔卡特其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_ALCATEL_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_ALCATEL",
+        "name": "阿尔卡特路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_ALCATEL_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_ALCATEL",
+        "name": "阿尔卡特交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_ALCATEL_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_ALCATEL",
+        "name": "贝尔无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_ALCATEL_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_ALCATEL",
+        "name": "贝尔无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_ALCATEL_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_ALCATEL",
+        "name": "贝尔WLAN"
+    }]
+}, {
+    "id": "AlliedTelesis",
+    "name": "安奈特",
+    "icon": "alliedtelesis.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_ALLIEDTELESIS_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_ALLIEDTELESIS_OTHER",
+        "name": "安奈特其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_ALLIEDTELESIS_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_ALLIEDTELESIS",
+        "name": "安奈特路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_ALLIEDTELESIS_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_ALLIEDTELESIS",
+        "name": "安奈特交换机(SNMP)"
+    }]
+}, {
+    "id": "Array",
+    "name": "Array",
+    "icon": "array.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_ARRAY_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_ARRAY",
+        "name": "Array防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_LOADBALANCE_ARRAY_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_ARRAY",
+        "name": "Array负载均衡器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_ARRAY_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_ARRAY_OTHER",
+        "name": "Array其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_ARRAY_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_ARRAY",
+        "name": "Array路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_ARRAY_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_ARRAY",
+        "name": "Array交换机(SNMP)"
+    }]
+}, {
+    "id": "Cabletron",
+    "name": "凯创",
+    "icon": "cabletron.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_CABLETRON_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_CABLETRON_OTHER",
+        "name": "凯创其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_CABLETRON_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_CABLETRON",
+        "name": "凯创路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_CABLETRON_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_CABLETRON",
+        "name": "凯创交换机(SNMP)"
+    }]
+}, {
+    "id": "Ceragon",
+    "name": "Ceragon",
+    "icon": "ceragon.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_CERAGON_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_CERAGON_OTHER",
+        "name": "Ceragon其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_CERAGON_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_CERAGON",
+        "name": "Ceragon路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_CERAGON_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_CERAGON",
+        "name": "Ceragon交换机(SNMP)"
+    }]
+}, {
+    "id": "DigitalChina",
+    "name": "神州数码",
+    "icon": "digitalchina.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_DIGITALCHINA_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_DIGITALCHINA",
+        "name": "神州数码防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_DIGITALCHINA_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_DIGITALCHINA_OTHER",
+        "name": "神州数码其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_DIGITALCHINA_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_DIGITALCHINA",
+        "name": "神州数码路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_DIGITALCHINA_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_DIGITALCHINA",
+        "name": "神州数码交换机(SNMP)"
+    }]
+}, {
+    "id": "DLink",
+    "name": "DLink",
+    "icon": "dlink.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_DLINK_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_DLINK_OTHER",
+        "name": "Dlink其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_DLINK_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_DLINK",
+        "name": "Dlink路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_DLINK_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_DLINK",
+        "name": "Dlink交换机(SNMP)"
+    }]
+}, {
+    "id": "Foundry",
+    "name": "网捷",
+    "icon": "foundry.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_FOUNDRY_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_FOUNDRY_OTHER",
+        "name": "网捷其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_FOUNDRY_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_FOUNDRY",
+        "name": "网捷路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_FOUNDRY_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_FOUNDRY",
+        "name": "网捷交换机(SNMP)"
+    }]
+}, {
+    "id": "FreeComm",
+    "name": "斐讯",
+    "icon": "freecomm.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_FREECOMM_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_FREECOMM_OTHER",
+        "name": "斐讯其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_FREECOMM_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_FREECOMM",
+        "name": "斐讯路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_FREECOMM_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_FREECOMM",
+        "name": "斐讯交换机(SNMP)"
+    }]
+}, {
+    "id": "Galaxywind",
+    "name": "银河风云",
+    "icon": "galaxywind.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_GALAXYWIND_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_GALAXYWIND_OTHER",
+        "name": "银河其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_GALAXYWIND_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_GALAXYWIND",
+        "name": "Galaxywind路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_GALAXYWIND_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_GALAXYWIND",
+        "name": "Galaxywind交换机(SNMP)"
+    }]
+}, {
+    "id": "Harbour",
+    "name": "港湾",
+    "icon": "harbour.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_HARBOUR_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_HARBOUR_OTHER",
+        "name": "港湾其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_HARBOUR_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_HARBOUR",
+        "name": "港湾路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_HARBOUR_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_HARBOUR",
+        "name": "港湾交换机(SNMP)"
+    }]
+}, {
+    "id": "HillStone",
+    "name": "山石网科",
+    "icon": "hillstone.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_HILLSTONE_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_HILLSTONE",
+        "name": "山石网科防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_HILLSTONE_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_HILLSTONE_OTHER",
+        "name": "山石网科其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_HILLSTONE_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_HILLSTONE",
+        "name": "山石网科路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_HILLSTONE_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_HILLSTONE",
+        "name": "山石网科交换机(SNMP)"
+    }]
+}, {
+    "id": "Lenovo",
+    "name": "联想",
+    "icon": "lenovo.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_LENOVO_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_LENOVO",
+        "name": "联想防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NETWORK_LENOVO_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_LENOVO_OTHER",
+        "name": "联想其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_LENOVO_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_LENOVO",
+        "name": "联想路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_LENOVO_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_LENOVO",
+        "name": "联想交换机(SNMP)"
+    }]
+}, {
+    "id": "Maipu",
+    "name": "迈普",
+    "icon": "maipu.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_MAIPUEND_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_MAIPUEND_OTHER",
+        "name": "迈普其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_MAIPUEND_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_MAIPUEND",
+        "name": "迈普路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_MAIPUEND_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_MAIPUEND",
+        "name": "迈普交换机(SNMP)"
+    }]
+}, {
+    "id": "Maxnet",
+    "name": "Maxnet",
+    "icon": "maxnet.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_MAXNET_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_MAXNET_OTHER",
+        "name": "迈科其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_MAXNET_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_MAXNET",
+        "name": "Maxnet路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_MAXNET_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_MAXNET",
+        "name": "Maxnet交换机(SNMP)"
+    }]
+}, {
+    "id": "MRV",
+    "name": "MRV",
+    "icon": "mrv.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_MRV_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_MRV_OTHER",
+        "name": "MRV其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_MRV_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_MRV",
+        "name": "MRV路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_MRV_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_MRV",
+        "name": "MRV交换机(SNMP)"
+    }]
+}, {
+    "id": "Netgear",
+    "name": "网件",
+    "icon": "netgear.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_NETGEAR_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_NETGEAR_OTHER",
+        "name": "网件其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_NETGEAR_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_NETGEAR",
+        "name": "网件路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_NETGEAR_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_NETGEAR",
+        "name": "网件交换机(SNMP)"
+    }]
+}, {
+    "id": "Nortel",
+    "name": "北电",
+    "icon": "nortel.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_NORTEL_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_NORTEL_OTHER",
+        "name": "北电其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_NORTEL_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_NORTEL",
+        "name": "北电路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_NORTEL_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_NORTEL",
+        "name": "北电交换机(SNMP)"
+    }]
+}, {
+    "id": "RiverStone",
+    "name": "RiverStone",
+    "icon": "riverstone.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_RIVERSTONE_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_RIVERSTONE_OTHER",
+        "name": "RiverStone其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_RIVERSTONE_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_RIVERSTONE",
+        "name": "RiverStone路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_RIVERSTONE_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_RIVERSTONE",
+        "name": "RiverStone交换机(SNMP)"
+    }]
+}, {
+    "id": "SanyCom",
+    "name": "SanyCom",
+    "icon": "sanycom.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_SANYCOM_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_SANYCOM_OTHER",
+        "name": "Sanycom其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_SANYCOM_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_SANYCOM",
+        "name": "Sanycom路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_SANYCOM_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_SANYCOM",
+        "name": "Sanycom交换机(SNMP)"
+    }]
+}, {
+    "id": "Other",
+    "name": "其他",
+    "icon": "other.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_OTHER",
+        "name": "其他主机"
+    }]
+}, {
+    "id": "FreeBSD",
+    "name": "FreeBSD",
+    "icon": "freebsd.png",
+    "models": []
+}, {
+    "id": "Linux",
+    "name": "-",
+    "icon": "host.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_LINUX_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_LINUX",
+        "name": "Linux主机(SNMP)"
+    }]
+}, {
+    "id": "SCO",
+    "name": "SCO",
+    "icon": "sco.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_SCOUNIX_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_SCOUNIX",
+        "name": "SCO Unix主机(SNMP)"
+    }]
+}, {
+    "id": "Oracle",
+    "name": "甲骨文",
+    "icon": "oracle.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_SOLARIS_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_SOLARIS",
+        "name": "Solaris主机(SNMP)"
+    }]
+}, {
+    "id": "PostgreSQL",
+    "name": "Postgre SQL",
+    "icon": "postgre.png",
+    "models": []
+}, {
+    "id": "Sybase",
+    "name": "Sybase",
+    "icon": "sybase.png",
+    "models": []
+}, {
+    "id": "Apache",
+    "name": "Apache",
+    "icon": "apache.png",
+    "models": []
+}, {
+    "id": "JBoss",
+    "name": "JBoss",
+    "icon": "jboss.png",
+    "models": []
+}, {
+    "id": "TongTech",
+    "name": "TongTech",
+    "icon": "tonglinkq.png",
+    "models": []
+}, {
+    "id": "SonicWall",
+    "name": "SonicWall",
+    "icon": "microsoft.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_SONICWALL_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_SONICWALL",
+        "name": "SonicWall防火墙(SNMP)"
+    }]
+}, {
+    "id": "Kingdee",
+    "name": "金蝶",
+    "icon": "kingdee.png",
+    "models": []
+}, {
+    "id": "Neusoft",
+    "name": "东软",
+    "icon": "neusoft.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_NETEYE_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_NETEYE",
+        "name": "东软防火墙(SNMP)"
+    }]
+}, {
+    "id": "Citrix",
+    "name": "思杰",
+    "icon": "citrix.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_CITRIX_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_CITRIX",
+        "name": "思杰负载均衡器(SNMP)"
+    }]
+}, {
+    "id": "Raisecom",
+    "name": "瑞斯康达",
+    "icon": "raisecom.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_RAISECOM_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_RAISECOM_OTHER",
+        "name": "Raisecom其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_RAISECOM_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_RAISECOM",
+        "name": "Raisecom交换机(SNMP)"
+    }]
+}, {
+    "id": "Brocade",
+    "name": "博科",
+    "icon": "brocade.png",
+    "models": [{
+        "id": "RIIL_RMM_STORAGE_FCSWITCH_BROCADE_SNMP",
+        "resTypeId": "RIIL_RMT_STORAGE_FCSWITCH_BROCADE",
+        "name": "博科FC交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_BROCADE_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_BROCADE",
+        "name": "博科交换机(SNMP)"
+    }]
+}, {
+    "id": "Venustech",
+    "name": "启明星辰",
+    "icon": "venustech.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_VENUSTECH_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_VENUSTECH",
+        "name": "启明星辰防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_IDS_VENUSTECH_SNMP",
+        "resTypeId": "RIIL_RMT_IDS_VENUSTECH",
+        "name": "启明星辰IDS(SNMP)"
+    }, {
+        "id": "RIIL_RMM_NEW_LOADBALANCE_VENUSTECH_SNMP",
+        "resTypeId": "RIIL_RMT_NEW_LOADBALANCE_VENUSTECH",
+        "name": "启明星辰负载均衡"
+    }, {
+        "id": "RIIL_RMM_NIPS_VENUSTECH_SNMP",
+        "resTypeId": "RIIL_RMT_NIPS_VENUSTECH",
+        "name": "启明星辰NIPS(SNMP)"
+    }]
+}, {
+    "id": "VMWARE",
+    "name": "VMware",
+    "icon": "vmware.png",
+    "models": []
+}, {
+    "id": "MOXA",
+    "name": "摩莎",
+    "icon": "moxa.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_MOXA_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_MOXA",
+        "name": "摩莎交换机(SNMP)"
+    }]
+}, {
+    "id": "CDT",
+    "name": "大唐",
+    "icon": "cdt.png",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_CDT_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_CDT",
+        "name": "大唐无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_CDT_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_CDT",
+        "name": "大唐无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_CDT_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_CDT",
+        "name": "大唐WLAN"
+    }]
+}, {
+    "id": "Honghao",
+    "name": "弘浩明传",
+    "icon": "honghao.png",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_HONGHAO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_HONGHAO",
+        "name": "弘浩无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_HONGHAO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_HONGHAO",
+        "name": "弘浩无线AP设备(SNMP)"
+    }]
+}, {
+    "id": "Motorola",
+    "name": "摩托罗拉",
+    "icon": "moto.png",
+    "models": [{
+        "id": "RIIL_RMM_ROUTER_MOTOROLA_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_MOTOROLA",
+        "name": "摩托罗拉路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_MOTO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_MOTO",
+        "name": "摩托罗拉无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_MOTO_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_MOTO",
+        "name": "摩托罗拉无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_MOTO_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_MOTO",
+        "name": "摩托罗拉WLAN"
+    }]
+}, {
+    "id": "Sunnada",
+    "name": "三元达",
+    "icon": "sunnada.png",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_SUNNADA_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_SUNNADA",
+        "name": "三元达无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAP_SUNNADA_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAP_SUNNADA",
+        "name": "三元达无线AP设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WLAN_SUNNADA_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_SUNNADA",
+        "name": "三元达WLAN"
+    }]
+}, {
+    "id": "Samsung",
+    "name": "三星",
+    "icon": "samsung.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_SAMSUNG_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_SAMSUNG",
+        "name": "三星防火墙(SNMP)"
+    }]
+}, {
+    "id": "O2security",
+    "name": "O2security",
+    "icon": "O2security.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_O2SECURITY_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_O2SECURITY",
+        "name": "O2security防火墙(SNMP)"
+    }]
+}, {
+    "id": "Xtera",
+    "name": "Xtera",
+    "icon": "xtera.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_ASCEN_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_ASCEN",
+        "name": "亚盛负载均衡器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_ASCEN_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_ASCEN",
+        "name": "亚盛路由器(SNMP)"
+    }]
+}, {
+    "id": "CAUCHO",
+    "name": "CAUCHO",
+    "icon": "caucho.png",
+    "models": []
+}, {
+    "id": "A10",
+    "name": "A10",
+    "icon": "a10.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_A10_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_A10",
+        "name": "A10负载均衡器(SNMP)"
+    }]
+}, {
+    "id": "WESTONE",
+    "name": "中华卫士",
+    "icon": "westone.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_WESTONE_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_WESTONE",
+        "name": "中华卫士防火墙(SNMP)"
+    }]
+}, {
+    "id": "Jetty",
+    "name": "Jetty",
+    "icon": "Jetty.png",
+    "models": []
+}, {
+    "id": "Infosec",
+    "name": "信安世纪",
+    "icon": "infosec.png",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_INFOSEC_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_INFOSEC",
+        "name": "信安世纪负载均衡器(SNMP)"
+    }]
+}, {
+    "id": "NSFOCUS",
+    "name": "绿盟",
+    "icon": "nsfocus.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_NSFOCUS_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_NSFOCUS",
+        "name": "绿盟防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_IPS_NSFOCUS_SNMP",
+        "resTypeId": "RIIL_RMT_IPS_NSFOCUS",
+        "name": "绿盟入侵防御（SNMP）"
+    }]
+}, {
+    "id": "Netentsec",
+    "name": "网康",
+    "icon": "netentsec.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_NETENTSEC_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_NETENTSEC",
+        "name": "网康防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_NETENTSEC_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_NETENTSEC",
+        "name": "网康路由器(SNMP)"
+    }]
+}, {
+    "id": "Drcom",
+    "name": "城市热点",
+    "icon": "other.png",
+    "models": [{
+        "id": "RIIL_RMM_ROUTER_DRCOM_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_DRCOM",
+        "name": "城市热点路由器(SNMP)"
+    }]
+}, {
+    "id": "CheckPoint",
+    "name": "CheckPoint",
+    "icon": "checkpoint.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_CHECKPOINT_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_CHECKPOINT",
+        "name": "CheckPoint防火墙(SNMP)"
+    }]
+}, {
+    "id": "NetApp",
+    "name": "NetApp",
+    "icon": "netapp.png",
+    "models": []
+}, {
+    "id": "Dameng",
+    "name": "达梦",
+    "icon": "dameng.png",
+    "models": []
+}, {
+    "id": "DPTech",
+    "name": "迪普",
+    "icon": "dptech.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_DPTECH_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_DPTECH",
+        "name": "迪普防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_FIREWALL_JINCHEN_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_JINCHEN",
+        "name": "冠群金辰防火墙(SNMP)"
+    }, {
+        "id": "RIIL_RMM_LOADBALANCE_DPTECH_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_DPTECH",
+        "name": "迪普负载均衡器"
+    }, {
+        "id": "RIIL_RMM_ROUTER_DPTECH_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_DPTECH",
+        "name": "迪普路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_DPTECH_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_DPTECH",
+        "name": "迪普交换机(SNMP)"
+    }]
+}, {
+    "id": "INSPUR",
+    "name": "浪潮",
+    "icon": "inspur.png",
+    "models": []
+}, {
+    "id": "Nexsan",
+    "name": "Nexsan",
+    "icon": "nexsan.png",
+    "models": []
+}, {
+    "id": "Nginx",
+    "name": "Nginx",
+    "icon": "nginx.png",
+    "models": []
+}, {
+    "id": "Extreme",
+    "name": "Extreme",
+    "icon": "extreme.png",
+    "models": [{
+        "id": "RIIL_RMM_NETWORK_EXTREME_OTHER_SNMP",
+        "resTypeId": "RIIL_RMT_NETWORK_EXTREME_OTHER",
+        "name": "Extreme其他设备(SNMP)"
+    }, {
+        "id": "RIIL_RMM_ROUTER_EXTREME_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_EXTREME",
+        "name": "Extreme路由器(SNMP)"
+    }, {
+        "id": "RIIL_RMM_SWITCH_EXTREME_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_EXTREME",
+        "name": "Extreme交换机(SNMP)"
+    }]
+}, {
+    "id": "CDP",
+    "name": "CDP",
+    "icon": "cdp.png",
+    "models": [{
+        "id": "RIIL_RMM_HOST_CDP_SNMP",
+        "resTypeId": "RIIL_RMT_HOST_CDP",
+        "name": "飞康CDP(SNMP)"
+    }]
+}, {
+    "id": "AMARANTEN",
+    "name": "阿姆雷特",
+    "icon": "teng.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_AMARANTEN_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_AMARANTEN",
+        "name": "阿姆雷特防火墙(SNMP)"
+    }]
+}, {
+    "id": "KOAL",
+    "name": "格尔",
+    "icon": "koal.png",
+    "models": [{
+        "id": "RIIL_RMM_ROUTER_KOAL_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_KOAL",
+        "name": "格尔路由器(SNMP)"
+    }]
+}, {
+    "id": "UCD",
+    "name": "UCD",
+    "icon": "ucd.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_UCD_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_UCD",
+        "name": "UCD安全设备(SNMP)"
+    }]
+}, {
+    "id": "ZX",
+    "name": "中新金盾",
+    "icon": "cnzx.png",
+    "models": [{
+        "id": "RIIL_RMM_FIREWALL_ZX_SNMP",
+        "resTypeId": "RIIL_RMT_FIREWALL_ZX",
+        "name": "中新金盾防火墙(SNMP)"
+    }]
+}, {
+    "id": "Shentong",
+    "name": "神舟通用",
+    "icon": "shentong.png",
+    "models": []
+}, {
+    "id": "TPLink",
+    "name": "TPLink",
+    "icon": "tplink.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_TPLINK_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_TPLINK",
+        "name": "TPLink交换机(SNMP)"
+    }]
+}, {
+    "id": "MikroTik",
+    "name": "MikroTik",
+    "icon": "mikrotik.png",
+    "models": [{
+        "id": "RIIL_RMM_ROUTER_MIKROTIK_SNMP",
+        "resTypeId": "RIIL_RMT_ROUTER_MIKROTIK",
+        "name": "MikroTik路由器(SNMP)"
+    }]
+}, {
+    "id": "Aruba",
+    "name": "Aruba",
+    "icon": "Aruba.png",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_ARUBA_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_ARUBA",
+        "name": "aruba无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WLAN_ARUBA_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_ARUBA",
+        "name": "Aruba WLAN"
+    }]
+}, {
+    "id": "H3CCAS",
+    "name": "H3CCAS",
+    "icon": "h3c.png"
+}, {
+    "id": "AVAYA",
+    "name": "AVAYA",
+    "icon": "avaya.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_AVAYA_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_AVAYA",
+        "name": "AVAYA交换机(SNMP)"
+    }]
+}, {
+    "id": "InterSystems",
+    "name": "InterSystems",
+    "icon": "intersystems.png",
+    "models": []
+}, {
+    "id": "Polycom",
+    "name": "宝利通",
+    "icon": "polycom.png",
+    "models": []
+}, {
+    "id": "macrosan",
+    "name": "macrosan",
+    "icon": "macrosan.png",
+    "models": []
+}, {
+    "id": "common",
+    "name": "-",
+    "icon": "host.png"
+}, {
+    "id": "Dell",
+    "name": "Dell",
+    "icon": "dell.png",
+    "models": []
+}, {
+    "id": "HIKVersion",
+    "name": "海康威视",
+    "icon": "hikvision.png"
+}, {
+    "id": "KYLAND",
+    "name": "KYLAND",
+    "icon": "kyland.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_KYLAND_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_KYLAND",
+        "name": "东土交换机"
+    }]
+}, {
+    "id": "3onedata",
+    "name": "3onedata",
+    "icon": "3onedata.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_3ONEDATA_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_3ONEDATA",
+        "name": "三旺交换机(SNMP)"
+    }]
+}, {
+    "id": "Hirschmann",
+    "name": "Hirschmann",
+    "icon": "hirschmann.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_HIRSCHMANN_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_HIRSCHMANN",
+        "name": "赫斯曼交换机(SNMP)"
+    }]
+}, {
+    "id": "AUTELAN",
+    "name": "傲天动联",
+    "icon": "autelan.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_AUTELAN_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_AUTELAN",
+        "name": "傲天动联交换机(SNMP)"
+    }, {
+        "id": "RIIL_RMM_WIRELESSAC_AUTELAN_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_AUTELAN",
+        "name": "傲天动联无线AC设备"
+    }, {
+        "id": "RIIL_RMM_WLAN_AUTELAN_SNMP",
+        "resTypeId": "RIIL_RMT_WLAN_AUTELAN",
+        "name": "傲天动联WLAN"
+    }]
+}, {
+    "id": "SUGON",
+    "name": "曙光",
+    "icon": "sugon.png"
+}, {
+    "id": "GW",
+    "name": "格林威尔",
+    "icon": "gw.png",
+    "models": [{
+        "id": "RIIL_RMM_SWITCH_GW_SNMP",
+        "resTypeId": "RIIL_RMT_SWITCH_GW",
+        "name": "格林威尔交换机"
+    }]
+}, {
+    "id": "Easted",
+    "name": "易信通",
+    "icon": "easted.png",
+    "models": []
+}, {
+    "id": "NeoKylin",
+    "name": "中标麒麟",
+    "icon": "neokylin.png",
+    "models": []
+}, {
+    "id": "FiberHome",
+    "name": "虹信通信",
+    "icon": "fiberhome.png",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_FIBER_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_FIBER",
+        "name": "烽火无线AC设备"
+    }]
+}, {
+    "id": "TSTC",
+    "name": "东方信联",
+    "icon": "",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_TSTC_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_TSTC",
+        "name": "东方信联AC设备"
+    }]
+}, {
+    "id": "ZOOMNET",
+    "name": "中太",
+    "icon": "",
+    "models": [{
+        "id": "RIIL_RMM_WIRELESSAC_ZOOM_SNMP",
+        "resTypeId": "RIIL_RMT_WIRELESSAC_ZOOM",
+        "name": "中太无线AC设备"
+    }]
+}, {
+    "id": "HITACHI",
+    "name": "日立",
+    "icon": "hitachi.png",
+    "models": []
+}, {
+    "id": "SAP",
+    "name": "Sap",
+    "icon": "sap.png",
+    "models": []
+}, {
+    "id": "APPEX",
+    "name": "华夏创新",
+    "icon": "",
+    "models": [{
+        "id": "RIIL_RMM_LOADBALANCE_APPEX_SNMP",
+        "resTypeId": "RIIL_RMT_LOADBALANCE_APPEX",
+        "name": "华夏创新负载均衡器(SNMP)"
+    }]
+}]
