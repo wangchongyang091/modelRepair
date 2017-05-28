@@ -1,3 +1,7 @@
+var DevType = [{
+    "id": "Host",
+    "name": "主机"
+}, { "id": "Router", "name": "路由器" }, { "id": "Switch", "name": "二层交换机" }, { "id": "RouterSwitch", "name": "三层交换机" }, { "id": "Firewall", "name": "防火墙" }, { "id": "LoadBalance", "name": "负载均衡" }, { "id": "WirelessAP", "name": "无线AP设备" }, { "id": "WirelessAC", "name": "无线AC设备" }, { "id": "Storage", "name": "存储设备" }, { "id": "FCSwitch", "name": "FC交换机" }];
 var VendorModel = [{
     "id": "Microsoft",
     "name": "微软",
