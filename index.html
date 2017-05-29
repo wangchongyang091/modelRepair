@@ -112,7 +112,7 @@
         height: 30px;
         border-radius: 6px;
         background-color: #3498db;
-        opacity: 0.7
+        opacity: 0.9
     }
     
     .submit:hover {
@@ -422,19 +422,19 @@
             </div>
             <div class="line">
                 <div class="label_name">设备厂商</div><span class="middle">:</span>
-                <select id="vendor" name="vendor" class="right" onchange="ModelRepair.changeModelOption(this.value)">
+                <select id="vendor" name="vendor" class="right" onchange="ModelRepair.changeModelOption(this.value)" style="width: 252px;height: 24px;" >
                 </select>
             </div>
             <div class="line">
                 <div class="label_name">对应模型</div><span>:</span>
-                <select id="model" name="model" class="right">
+                <select id="model" name="model" class="right" style="width: 252px;height: 24px">
                     <option value="RIIL_RMM_SWITCH_CABLETRON_SNMP">凯创交换机(SNMP)</option>
                     <option value="RIIL_RMM_SWITCH_JUNIPER_SNMP">Juniper交换机(SNMP)</option>
                 </select>
             </div>
             <div class="line">
                 <div class="label_name">设备类型</div><span>:</span>
-                <select id="devType" name="devType" class="right">
+                <select id="devType" name="devType" class="right" style="width: 252px;height: 24px;">
                 </select>
             </div>
             <div class="submit" onclick="ModelRepair.generateModelFile()">提 交</div>
